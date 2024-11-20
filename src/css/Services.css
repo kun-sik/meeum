@@ -1,0 +1,18 @@
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: url('../assets/IMG_3817.JPG') no-repeat center center/cover;
+    height: 100vh;
+
+  }
+  
+  .services-h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .services-p {
+    font-size: 18px;
+    color: #555;
+  }
+  
