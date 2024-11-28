@@ -1,18 +1,66 @@
 .services-section {
-    padding: 60px 20px;
-    text-align: center;
-    background: url('../assets/IMG_3817.JPG') no-repeat center center/cover;
-    height: 100vh;
+  position: relative;
+  padding: 60px 20px;
+  text-align: center;
+  background: url('../assets/M1.jpg') no-repeat center center; /* 배경 이미지 중앙 정렬 */
+  background-size: cover; /* 배경을 화면에 맞게 채움 */
+  height: 100vh;
+  color: #fff; /* 글자 색상: 흰색 */
+  font-family: 'Roboto', sans-serif; /* 현대적이고 깔끔한 폰트 */
+}
 
-  }
-  
-  .services-h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .services-p {
-    font-size: 18px;
-    color: #555;
-  }
-  
+.services-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 어둡게 처리 (50% 불투명도) */
+  z-index: 1;
+}
+
+.services-section h2 {
+  font-size: 48px; /* 큰 제목 크기 */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* 대문자 스타일 */
+  letter-spacing: 2px; /* 글자 간격 추가 */
+  color: #ffcc00; /* 강조된 색상 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 글자 그림자 추가 */
+  z-index: 2;
+  position: relative;
+}
+
+.services-section p {
+  font-size: 20px; /* 본문 글자 크기 */
+  line-height: 1.8; /* 가독성을 위한 줄 간격 */
+  margin-bottom: 15px;
+  color: #fff; /* 흰색 텍스트 */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* 은은한 텍스트 그림자 */
+  z-index: 2;
+  position: relative;
+}
+
+.call-to-action {
+  margin-top: 30px;
+  font-size: 22px; /* 콜투액션 크기 확대 */
+  font-weight: 600;
+  color: #ffcc00;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* 콜투액션 강조 */
+}
+
+.call-to-action a {
+  color: #ffcc00;
+  text-decoration: none;
+  border-bottom: 2px solid #ffcc00;
+  transition: all 0.3s ease;
+}
+
+.call-to-action a:hover {
+  color: #fff;
+  background-color: #ffcc00;
+  border-bottom: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
